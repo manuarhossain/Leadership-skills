@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOW GOOD YOUR LEADERSHIP SKILLS?</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .bar {
+            width: 50px;
+            margin: 5px;
+            text-align: center;
+            color: white;
+            display: inline-block;
+        }
+        .bar.red { background-color: red; }
+        .bar.blue { background-color: blue; }
+        .bar.grey { background-color: grey; }
+
+        @media print {
+            body * {
+                visibility: hidden;
+            }
+            #results, #results * {
+                visibility: visible;
+            }
+            #results {
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>HOW GOOD YOUR LEADERSHIP SKILLS?</h1>
+    <p>For each statement, click the button in the column that best describes you. Please answer questions as you actually are (rather than how you think you should be), and don't worry if some questions seem to score in the "wrong direction." When you are finished, please click the "Submit" button at the bottom of the test.</p>
+    <form id="survey-form">
+        <ul>
+            <li>
+                <h4>1. When assigning tasks, I consider people's skills and interests.</h4>
+                <label><input type="radio" name="question1" value="1"> Not at all</label>
+                <label><input type="radio" name="question1" value="2"> Rarely</label>
+                <label><input type="radio" name="question1" value="3"> Sometimes</label>
+                <label><input type="radio" name="question1" value="4"> Often</label>
+                <label><input type="radio" name="question1" value="5"> Very Often</label>
+            </li>
+            <li>
+                <h4>2. I doubt myself and my ability to succeed.</h4>
+                <label><input type="radio" name="question2" value="5"> Not at all</label>
+                <label><input type="radio" name="question2" value="4"> Rarely</label>
+                <label><input type="radio" name="question2" value="3"> Sometimes</label>
+                <label><input type="radio" name="question2" value="2"> Often</label>
+                <label><input type="radio" name="question2" value="1"> Very Often</label>
+            </li>
+            <li>
+                <h4>3. I expect nothing less than exceptional results from people.</h4>
+                <label><input type="radio" name="question3" value="1"> Not at all</label>
+                <label><input type="radio" name="question3" value="2"> Rarely</label>
+                <label><input type="radio" name="question3" value="3"> Sometimes</label>
+                <label><input type="radio" name="question3" value="4"> Often</label>
+                <label><input type="radio" name="question3" value="5"> Very Often</label>
+            </li>
+            <li>
+                <h4>4. I expect my people to work harder than I do.</h4>
+                <label><input type="radio" name="question4" value="5"> Not at all</label>
+                <label><input type="radio" name="question4" value="4"> Rarely</label>
+                <label><input type="radio" name="question4" value="3"> Sometimes</label>
+                <label><input type="radio" name="question4" value="2"> Often</label>
+                <label><input type="radio" name="question4" value="1"> Very Often</label>
+            </li>
+            <li>
+                <h4>5. When someone is upset, I try to understand how they are feeling.</h4>
+                <label><input type="radio" name="question5" value="1"> Not at all</label>
+                <label><input type="radio" name="question5" value="2"> Rarely</label>
+                <label><input type="radio" name="question5" value="3"> Sometimes</label>
+                <label><input type="radio" name="question5" value="4"> Often</label>
+                <label><input type="radio" name="question5" value="5"> Very Often</label>
+            </li>
+            <li>
+                <h4>6. When circumstances change, I struggle to know what to do.</h4>
+                <label><input type="radio" name="question6" value="5"> Not at all</label>
+                <label><input type="radio" name="question6" value="4"> Rarely</label>
+                <label><input type="radio" name="question6" value="3"> Sometimes</label>
+                <label><input type="radio" name="question6" value="2"> Often</label>
+                <label><input type="radio" name="question6" value="1"> Very Often</label>
+            </li>
+            <li>
+                <h4>7. I think that personal feelings shouldn't be allowed to get in the way of performance and productivity.</h4>
+                <label><input type="radio" name="question7" value="5"> Not at all</label>
+                <label><input type="radio" name="question7" value="4"> Rarely</label>
+                <label><input type="radio" name="question7" value="3"> Sometimes</label>
+                <label><input type="radio" name="question7" value="2"> Often</label>
+                <label><input type="radio" name="question7" value="1"> Very Often</label>
+            </li>
+            <li>
+                <h4>8. I am highly motivated because I know I have what it takes to be successful.</h4>
+                <label><input type="radio" name="question8" value="1"> Not at all</label>
+                <label><input type="radio" name="question8" value="2"> Rarely</label>
+                <label><input type="radio" name="question8" value="3"> Sometimes</label>
+                <label><input type="radio" name="question8" value="4"> Often</label>
+                <label><input type="radio" name="question8" value="5"> Very Often</label>
+            </li>
+            <li>
+                <h4>9. Time spent worrying about team morale is time that's wasted.</h4>
+                <label><input type="radio" name="question9" value="5"> Not at all</label>
+                <label><input type="radio" name="question9" value="4"> Rarely</label>
+                <label><input type="radio" name="question9" value="3"> Sometimes</label>
+                <label><input type="radio" name="question9" value="2"> Often</label>
+                <label><input type="radio" name="question9" value="1"> Very Often</label>
+            </li>
+            <li>
+                <h4>10. I get upset and worried quite often in the workplace.</h4>
+                <label><input type="radio" name="question10" value="5"> Not at all</label>
+                <label><input type="radio" name="question10" value="4"> Rarely</label>
+                <label><input type="radio" name="question10" value="3"> Sometimes</label>
+                <label><input type="radio" name="question10" value="2"> Often</label>
+                <label><input type="radio" name="question10" value="1"> Very Often</label>
+            </li>
+            <li>
+                <h4>11. My actions show people what I want from them.</h4>
+                <label><input type="radio" name="question11" value="1"> Not at all</label>
+                <label><input type="radio" name="question11" value="2"> Rarely</label>
+                <label><input type="radio" name="question11" value="3"> Sometimes</label>
+                <label><input type="radio" name="question11" value="4"> Often</label>
+                <label><input type="radio" name="question11" value="5"> Very Often</label>
+            </li>
+            <li>
+                <h4>12. When working with a team, I encourage everyone to work toward the same overall objectives.</h4>
+                <label><input type="radio" name="question12" value="1"> Not at all</label>
+                <label><input type="radio" name="question12" value="2"> Rarely</label>
+                <label><input type="radio" name="question12" value="3"> Sometimes</label>
+                <label><input type="radio" name="question12" value="4"> Often</label>
+                <label><input type="radio" name="question12" value="5"> Very Often</label>
+            </li>
+            <li>
+                <h4>13. I make exceptions to my rules and expectations. It's easier than being the enforcer all the time!</h4>
+                <label><input type="radio" name="question13" value="5"> Not at all</label>
+                <label><input type="radio" name="question13" value="4"> Rarely</label>
+                <label><input type="radio" name="question13" value="3"> Sometimes</label>
+                <label><input type="radio" name="question13" value="2"> Often</label>
+                <label><input type="radio" name="question13" value="1"> Very Often</label>
+            </li>
+            <li>
+                <h4>14. I enjoy planning for the future.</h4>
+                <label><input type="radio" name="question14" value="1"> Not at all</label>
+                <label><input type="radio" name="question14" value="2"> Rarely</label>
+                <label><input type="radio" name="question14" value="3"> Sometimes</label>
+                <label><input type="radio" name="question14" value="4"> Often</label>
+                <label><input type="radio" name="question14" value="5"> Very Often</label>
+            </li>
+            <li>
+                <h4>15. I feel threatened when someone criticizes me.</h4>
+                <label><input type="radio" name="question15" value="5"> Not at all</label>
+                <label><input type="radio" name="question15" value="4"> Rarely</label>
+                <label><input type="radio" name="question15" value="3"> Sometimes</label>
+                <label><input type="radio" name="question15" value="2"> Often</label>
+                <label><input type="radio" name="question15" value="1"> Very Often</label>
+            </li>
+            <li>
+                <h4>16. I make time to learn what people need from me, so that they can be successful.</h4>
+                <label><input type="radio" name="question15" value="1"> Not at all</label>
+                <label><input type="radio" name="question15" value="2"> Rarely</label>
+                <label><input type="radio" name="question15" value="3"> Sometimes</label>
+                <label><input type="radio" name="question15" value="4"> Often</label>
+                <label><input type="radio" name="question15" value="5"> Very Often</label>
+            </li>
+            <li>
+                <h4>17. I'm optimistic about life, and I can see beyond temporary setbacks and problems.</h4>
+                <label><input type="radio" name="question15" value="1"> Not at all</label>
+                <label><input type="radio" name="question15" value="2"> Rarely</label>
+                <label><input type="radio" name="question15" value="3"> Sometimes</label>
+                <label><input type="radio" name="question15" value="4"> Often</label>
+                <label><input type="radio" name="question15" value="5"> Very Often</label>
+            </li>
+            <li>
+                <h4>18. I think that teams perform best when individuals keep doing the same tasks and perfecting them, instead of learning new skills and challenging themselves.</h4>
+                <label><input type="radio" name="question15" value="5"> Not at all</label>
+                <label><input type="radio" name="question15" value="4"> Rarely</label>
+                <label><input type="radio" name="question15" value="3"> Sometimes</label>
+                <label><input type="radio" name="question15" value="2"> Often</label>
+                <label><input type="radio" name="question15" value="1"> Very Often</label>
+            </li>
+        </ul>
+        <button type="button" onclick="submitForm()">Submit</button>
+    </form>
+    <div id="results"></div>
+    <script src="script.js"></script>
+</body>
+</html>
+
